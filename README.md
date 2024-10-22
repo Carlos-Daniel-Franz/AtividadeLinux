@@ -3,9 +3,9 @@
 Documentação: Instalação do Ubuntu 20.04
 
 Pré-requisitos:
-1. Windows 10 ou Windows 11. 
-2. Windows Subsystem for Linux (WSL) habilitado.
-3. Conexão com a Internet.
+- Windows 10 ou Windows 11.
+- Windows Subsystem for Linux (WSL) habilitado.
+- Conexão com a Internet.
 
 Instalação do WSL:
 WSL: Para habilitar o WSL é necessário abrir o PowerShell como administrador. Após o isso, execute o seguinte comando "wls --install" e reinicei o computador.
@@ -28,9 +28,9 @@ Commercial support is available at nginx.com.
 Thank you for using nginx. "
 
 Comandos para do Nginx:
-1. Inicar o serviço: "sudo systemctl start nginx".
-2. Parar o serviço: "sudo systemctl stop nginx".
-3. Verificar se o serviço está ativo: "sudo systemctl status nginx".
+- Inicar o serviço: "sudo systemctl start nginx".
+- Parar o serviço: "sudo systemctl stop nginx".
+- Verificar se o serviço está ativo: "sudo systemctl status nginx".
 
 Criação do Script de validação:
 Crie um repostitório para arquivos de log e script serem armazendados com o comando "mkdir AtividadeLinux". Após isso execute "cd AtividadeLinux" para entrar no diretório. Execute o comando "nano nginx.sh" para criar o arquivo que será feito o script em PowerShell e informe o código e salve o arquivo. Para tornar o script executável utilize o comando "chmod +x  /home/franz/AtividadeLinux/_nginx.sh". E para automatizar a execução do script utilizaremos o comando "contrab -e" e informaremos essa linha de código "*/5 * * * * /bin/bash ~/nginx.sh" que fará com que o script execute a cada 5 minutos que irá gerar saídas informando em cada arquivo log o status do serviço Nginx.
